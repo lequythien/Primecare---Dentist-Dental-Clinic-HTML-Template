@@ -26,22 +26,23 @@ const Header = () => {
   };
 
   return (
-    <div className="bg-[#0e384c] text-white py-24 px-32 flex justify-center items-center">
-      <div className="w-2/4 pr-12">
-        <h1 className="text-6xl font-bold leading-tight mb-6">
+    <div className="bg-[#0e384c] text-white py-16 px-6 lg:py-24 lg:px-32 flex flex-col lg:flex-row justify-center items-center">
+      {/* Text Section */}
+      <div className="lg:w-2/4 w-full lg:pr-12 lg:text-left">
+        <h1 className="text-3xl lg:text-6xl font-bold leading-tight mb-6">
           {animateText(
             "Exceptional dental care for every stage of your journey",
             "fade-up"
           )}
         </h1>
 
-        <p className="text-lg mb-6" data-aos="fade-up">
+        <p className="text-lg mb-6 text-center lg:text-left" data-aos="fade-up">
           We are committed to providing top-notch dental care in a comfortable
           and friendly environment.
         </p>
 
         <button
-          className="relative overflow-hidden bg-[#1e84b5] text-white font-semibold px-6 py-3 rounded-xl flex items-center transition duration-300 ease-in-out group"
+          className="relative overflow-hidden bg-[#1e84b5] text-white font-semibold px-6 py-3 rounded-xl flex mx-auto lg:mx-0 items-center transition duration-300 ease-in-out group"
           data-aos="fade-up"
           data-aos-delay="500"
         >
@@ -55,7 +56,7 @@ const Header = () => {
 
         <hr className="mt-10" />
 
-        <div className="flex space-x-6 mt-8 font-semibold">
+        <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6 mt-8 font-semibold">
           <div
             className="flex items-center space-x-2"
             data-aos="fade-up"
@@ -83,32 +84,55 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Image section */}
-      <div className="w-1/2 grid grid-cols-3">
+      {/* Image Section */}
+      <div className="w-full grid grid-cols-3 gap-2 lg:w-1/2 lg:grid-cols-3 lg:gap-4 mt-10 lg:mt-0">
+        {/* ẢnhẢnh 1 */}
         <div
-          className="flex flex-col space-y-4"
+          className="flex flex-col space-y-2 lg:space-y-4"
           data-aos="fade-right"
           data-aos-delay="500"
         >
-          <img src={Img_Header1} alt="" className="w-44 h-96 rounded-3xl" />
-          <img src={Img_Header2} alt="" className="w-44 h-40 rounded-3xl" />
+          <img
+            src={Img_Header1}
+            alt="Dental Care 1"
+            className="w-full h-40 object-cover rounded-2xl lg:h-96"
+          />
+          <img
+            src={Img_Header2}
+            alt="Dental Care 2"
+            className="w-full h-24 object-cover rounded-2xl lg:h-40"
+          />
         </div>
 
+        {/* Ảnh 2 */}
         <div
-          className="flex flex-col space-y-4"
+          className="flex flex-col space-y-2 lg:space-y-4"
           data-aos="fade-right"
           data-aos-delay="700"
         >
-          <img src={Img_Header3} alt="" className="w-44 h-40 rounded-3xl" />
-          <img src={Img_Header4} alt="" className="w-44 h-96 rounded-3xl" />
+          <img
+            src={Img_Header3}
+            alt="Dental Care 3"
+            className="w-full h-24 object-cover rounded-2xl lg:h-40"
+          />
+          <img
+            src={Img_Header4}
+            alt="Dental Care 4"
+            className="w-full h-40 object-cover rounded-2xl lg:h-96"
+          />
         </div>
 
+        {/* ẢNh 3 */}
         <div
-          className="flex items-center"
+          className="flex flex-col justify-center space-y-2 lg:space-y-4"
           data-aos="fade-right"
           data-aos-delay="900"
         >
-          <img src={Img_Header5} alt="" className="w-44 h-96 rounded-3xl" />
+          <img
+            src={Img_Header5}
+            alt="Dental Care 5"
+            className="w-full h-48 object-cover rounded-2xl lg:h-96"
+          />
         </div>
       </div>
     </div>

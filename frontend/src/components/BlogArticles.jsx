@@ -8,7 +8,7 @@ const BlogArticles = () => {
   return (
     <div className="bg-[#f9fcff] py-12">
       <div
-        className="text-center text-[#1e84b5] font-medium text-base mb-4"
+        className="text-center text-[#1e84b5] font-medium text-sm lg:text-base mb-4"
         data-aos="fade-up"
         data-aos-delay="300"
       >
@@ -16,14 +16,14 @@ const BlogArticles = () => {
         Blog & Articles
       </div>
       <h1
-        className="text-center text-4xl font-bold text-[#333] mb-4"
+        className="text-center text-2xl lg:text-4xl font-bold text-[#333] mx-4 mb-4"
         data-aos="zoom-in"
         data-aos-delay="400"
       >
         Our latest dental tips and news
       </h1>
       <p
-        className="w-1/2 mx-auto font-medium text-center text-[#537383] leading-7 mb-7"
+        className="w-full sm:w-1/2 mx-auto px-4 font-medium text-center text-[#537383] leading-7 mb-7"
         data-aos="fade-up"
         data-aos-delay="500"
       >
@@ -32,21 +32,21 @@ const BlogArticles = () => {
         With dental practices throughout the world.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 mx-auto max-w-screen-xl px-6">
+      <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-8 mx-auto max-w-screen-xl px-4 lg:px-6">
         <div
-          className="bg-white border rounded-3xl py-4 px-6"
+          className="bg-white border rounded-3xl py-2 lg:py-4 px-2 lg:px-6"
           data-aos="fade-up"
           data-aos-delay="600"
         >
-          <div className="bg-white overflow-hidden flex">
-            <div className="w-1/2 overflow-hidden">
+          <div className="bg-white overflow-hidden flex flex-col lg:flex-row">
+            <div className="w-full lg:w-1/2 overflow-hidden">
               <img
                 src={Img1}
-                alt=""
+                alt="Post 1"
                 className="w-full h-full object-cover rounded-3xl transition-all duration-500 transform hover:scale-110"
               />
             </div>
-            <div className="w-1/2 p-6">
+            <div className="w-full lg:w-1/2 p-6">
               <h1 className="font-semibold text-xl">
                 The Importance of Regular Dental Check-Ups
               </h1>
@@ -68,19 +68,19 @@ const BlogArticles = () => {
         </div>
 
         <div
-          className="bg-white border rounded-3xl py-4 px-6"
+          className="bg-white border rounded-3xl py-2 lg:py-4 px-2 lg:px-6"
           data-aos="fade-up"
           data-aos-delay="750"
         >
-          <div className="bg-white overflow-hidden flex">
-            <div className="w-1/2 overflow-hidden">
+          <div className="bg-white overflow-hidden flex flex-col lg:flex-row">
+            <div className="w-full lg:w-1/2 overflow-hidden">
               <img
                 src={Img2}
-                alt=""
+                alt="Post 2"
                 className="w-full h-full object-cover rounded-3xl transition-all duration-500 transform hover:scale-110"
               />
             </div>
-            <div className="w-1/2 p-6">
+            <div className="w-full lg:w-1/2 p-6">
               <h1 className="font-semibold text-xl">
                 How Often Should You Really Visit the Dentist?
               </h1>
@@ -102,19 +102,19 @@ const BlogArticles = () => {
         </div>
 
         <div
-          className="bg-white border rounded-3xl py-4 px-6"
+          className="bg-white border rounded-3xl py-2 lg:py-4 px-2 lg:px-6"
           data-aos="fade-up"
           data-aos-delay="850"
         >
-          <div className="bg-white overflow-hidden flex">
-            <div className="w-1/2 overflow-hidden">
+          <div className="bg-white overflow-hidden flex flex-col lg:flex-row">
+            <div className="w-full lg:w-1/2 overflow-hidden">
               <img
                 src={Img3}
-                alt=""
+                alt="Post 3"
                 className="w-full h-full object-cover rounded-3xl transition-all duration-500 transform hover:scale-110"
               />
             </div>
-            <div className="w-1/2 p-6">
+            <div className="w-full lg:w-1/2 p-6">
               <h1 className="font-semibold text-xl">
                 The Benefits of Professional Teeth Whitening
               </h1>
@@ -136,19 +136,19 @@ const BlogArticles = () => {
         </div>
 
         <div
-          className="bg-white border rounded-3xl py-4 px-6"
+          className="bg-white border rounded-3xl py-2 lg:py-4 px-2 lg:px-6"
           data-aos="fade-up"
           data-aos-delay="950"
         >
-          <div className="bg-white overflow-hidden flex">
-            <div className="w-1/2 overflow-hidden">
+          <div className="bg-white overflow-hidden flex flex-col lg:flex-row">
+            <div className="w-full lg:w-1/2 overflow-hidden">
               <img
                 src={Img4}
-                alt=""
+                alt="Post 4"
                 className="w-full h-full object-cover rounded-3xl transition-all duration-500 transform hover:scale-110"
               />
             </div>
-            <div className="w-1/2 p-6">
+            <div className="w-full lg:w-1/2 p-6">
               <h1 className="font-semibold text-xl">
                 The Importance of Regular Dental Checkups for Kids
               </h1>

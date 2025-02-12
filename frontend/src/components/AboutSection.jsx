@@ -1,28 +1,35 @@
 import React from "react";
 import ImgAboutSection from "../assets/images/about-us-image.jpg";
+import CountUp from "react-countup";
 
 const AboutSection = () => {
   return (
-    <div className="my-20 flex items-center justify-center space-x-12">
-      <div className="relative" data-aos="fade-right" data-aos-delay="300">
+    <div className="my-20 flex flex-col lg:flex-row items-center justify-center lg:space-x-12 space-y-10 lg:space-y-0 px-6">
+      {/* Image Section */}
+      <div
+        className="relative w-full lg:w-auto"
+        data-aos="fade-right"
+        data-aos-delay="300"
+      >
         <img
           src={ImgAboutSection}
-          alt="ImgAboutSection"
-          className="rounded-3xl w-full h-auto shadow-lg"
+          alt="About Us"
+          className="rounded-3xl w-full max-w-lg h-auto shadow-lg mx-auto"
         />
 
-        <div className="absolute bottom-5 left-10 bg-[#acaca7f4] shadow-md p-6 rounded-3xl px-7 flex items-center space-x-3">
+        <div className="absolute bottom-10 left-5 lg:left-10 bg-[#acaca7f4] shadow-md p-6 rounded-3xl px-7 flex items-center space-x-3">
           <div>
             <i className="fa-regular fa-thumbs-up text-white border rounded-xl text-base px-3 py-2 hover:bg-[#0e384c]"></i>
-            <p className="text-white py-1 text-2xl font-bold">875+</p>
+            <p className="text-white py-1 text-2xl font-bold"><CountUp start={0} end={875} duration={2.5} separator="," />+</p>
             <p className="text-white font-medium">Happy Patients</p>
           </div>
         </div>
       </div>
 
-      <div className="max-w-xl">
+      {/* Content Section */}
+      <div className="max-w-xl lg:text-left">
         <div
-          className="flex items-center space-x-3 text-[#1e84b5]"
+          className="flex items-center lg:justify-start space-x-3 text-[#1e84b5]"
           data-aos="fade-up"
           data-aos-delay="300"
         >
@@ -31,7 +38,7 @@ const AboutSection = () => {
         </div>
 
         <h1
-          className="text-4xl font-bold my-4"
+          className="text-3xl lg:text-4xl font-bold my-4"
           data-aos="fade-left"
           data-aos-delay="300"
         >
@@ -48,44 +55,48 @@ const AboutSection = () => {
           treatments with dental practice throughout the world.
         </p>
 
-        <div className="grid grid-cols-2 gap-6 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
           <ul
-            className="space-y-3 text-[#0e384c] font-bold text-lg items-center"
+            className="space-y-3 text-[#0e384c] font-bold text-lg"
             data-aos="fade-up"
             data-aos-delay="500"
           >
             <li>
-              <i class="fa-regular fa-circle-check mr-2"></i> Experienced Team
+              <i className="fa-regular fa-circle-check mr-2"></i> Experienced
+              Team
             </li>
             <li>
-              <i class="fa-regular fa-circle-check mr-2"></i> Emergency Dental
-              Services
+              <i className="fa-regular fa-circle-check mr-2"></i> Emergency
+              Dental Services
             </li>
             <li>
-              <i class="fa-regular fa-circle-check mr-2"></i> State-of-the-Art
-              Technology
+              <i className="fa-regular fa-circle-check mr-2"></i>{" "}
+              State-of-the-Art Technology
             </li>
             <li>
-              <i class="fa-regular fa-circle-check mr-2"></i> Comprehensive
+              <i className="fa-regular fa-circle-check mr-2"></i> Comprehensive
               Services
             </li>
           </ul>
 
           <div
-            className="flex items-center space-x-3 bg-[#0e384c] p-8 rounded-3xl w-max"
+            className="flex items-center justify-center lg:justify-start bg-[#0e384c] p-8 rounded-3xl w-max mx-auto lg:mx-0"
             data-aos="fade-up"
             data-aos-delay="500"
           >
             <div>
               <i className="fa-solid fa-user-nurse text-[#1e84b5] bg-white text-xl border rounded-xl px-3 py-2 hover:bg-[#1e84b5] hover:text-white"></i>
-              <p className="text-white text-4xl font-bold my-2">25+</p>
+              <p className="text-white text-4xl font-bold my-2">
+                <CountUp start={0} end={25} duration={2.5} separator="," />+
+              </p>
+
               <p className="text-white">Years of Experience</p>
             </div>
           </div>
         </div>
 
         <button
-          className="relative overflow-hidden bg-[#1e84b5] text-white font-semibold mt-6 px-6 py-3 rounded-xl flex items-center transition duration-300 ease-in-out group"
+          className="relative overflow-hidden bg-[#1e84b5] text-white font-semibold mt-6 px-6 py-3 rounded-xl flex items-center mx-auto lg:mx-0 transition duration-300 ease-in-out group"
           data-aos="fade-up"
           data-aos-delay="600"
         >

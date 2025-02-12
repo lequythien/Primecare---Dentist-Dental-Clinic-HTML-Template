@@ -5,9 +5,9 @@ import Icon3 from "../assets/images/icon-process-3.svg";
 
 const OurProcess = () => {
   return (
-    <div className="container mx-auto font-medium text-lg py-20 px-24">
+    <div className="container mx-auto font-medium text-lg py-20 px-6 sm:px-12 lg:px-24">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <div className="space-y-6 pr-14">
+        <div className="space-y-6 pr-0 lg:pr-14">
           <div
             className="flex items-center text-[#1e84b5] font-medium text-base"
             data-aos="fade-up"
@@ -82,7 +82,7 @@ const OurProcess = () => {
               </p>
             </figure>
             <div>
-              <h1 className="font-semibold text-22xl text-[#0e384c]">
+              <h1 className="font-semibold text-2xl text-[#0e384c]">
                 Treatment By Experts
               </h1>
               <p className="text-[#567585] text-base">

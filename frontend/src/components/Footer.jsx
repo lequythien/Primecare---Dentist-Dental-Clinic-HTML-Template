@@ -4,12 +4,12 @@ import Logo from "../assets/images/logo.svg";
 const Footer = () => {
   return (
     <div className="w-full bg-[#0e384c] text-white">
-      <div className="container mx-auto px-8 lg:px-32">
-        <div className="flex flex-col py-14 lg:flex-row justify-between items-center text-center lg:text-left">
+      <div className="container mx-auto px-4 lg:px-32">
+        <div className="flex flex-col py-14 lg:flex-row justify-between items-start lg:text-left">
           <h1 className="font-bold text-3xl lg:text-4xl">
             Your Healthier Smile Awaits - Book Now!
           </h1>
-          <button className="relative overflow-hidden bg-[#1e84b5] text-white font-semibold px-6 py-3 rounded-xl flex items-center transition duration-300 ease-in-out group">
+          <button className="relative overflow-hidden bg-[#1e84b5] text-white font-semibold mt-6 lg:mt-0 px-6 py-3 rounded-xl flex transition duration-300 ease-in-out group">
             <span className="relative z-10 flex items-center">
               Book Appointment
               <i className="fa-solid fa-arrow-right ml-2"></i>
@@ -20,15 +20,16 @@ const Footer = () => {
 
         <hr className="pb-12 border-gray-500" />
 
-        <div className="grid grid-cols-5 gap-6">
-          <div className="col-span-2">
-            <img src={Logo} alt="Logo" className="w-56 mb-6" />
-            <p className="font-normal text-base mr-8">
+        {/* Footer Links */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+          <div className="col-span-1 sm:col-span-2 lg:col-span-2">
+            <img src={Logo} alt="Logo" className="w-56 mb-6 lg:mx-0" />
+            <p className="font-normal text-base mr-8 lg:text-left">
               The goal of our clinic is to provide friendly, caring dentistry
               and the highest level of general, cosmetic, and specialist dental
               treatments.
             </p>
-            <div className="flex mt-4 space-x-4">
+            <div className="flex mt-4 lg:justify-start space-x-4">
               <i className="fa-brands fa-facebook-f text-2xl hover:text-[#1e84b5]"></i>
               <i className="fa-brands fa-x-twitter text-2xl hover:text-[#1e84b5]"></i>
               <i className="fa-brands fa-linkedin-in text-2xl hover:text-[#1e84b5]"></i>
@@ -38,7 +39,7 @@ const Footer = () => {
 
           <div>
             <h1 className="font-bold text-xl mb-4">Quick Links</h1>
-            <ul className="space-y-2">
+            <ul className="space-y-2 lg:text-left">
               <li className="hover:text-[#1e84b5]">
                 <a href="">Home</a>
               </li>
@@ -56,7 +57,7 @@ const Footer = () => {
 
           <div>
             <h1 className="font-bold text-xl mb-4">Services</h1>
-            <ul className="space-y-2">
+            <ul className="space-y-2 lg:text-left">
               <li className="hover:text-[#1e84b5]">
                 <a href="">Dental Care</a>
               </li>
@@ -74,7 +75,7 @@ const Footer = () => {
 
           <div>
             <h1 className="font-bold text-xl mb-4">Contact Info</h1>
-            <ul className="space-y-5">
+            <ul className="space-y-5 lg:text-left">
               <li>
                 <i className="fa-solid fa-phone mr-2"></i>+1 809 120 6705
               </li>

@@ -5,10 +5,10 @@ const ProvideSection = () => {
   const [isVideoVisible, setIsVideoVisible] = useState(false);
 
   return (
-    <div className="w-full bg-[#0e384c] text-white py-20">
-      <div className="container mx-auto px-32">
+    <div className="w-full bg-[#0e384c] text-white py-10 lg:py-20">
+      <div className="container mx-auto px-4 sm:px-8 lg:px-32">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          <div className="pr-16">
+          <div className="pr-0 md:pr-16">
             <div
               className="flex items-center text-white font-medium text-sm mb-2"
               data-aos="fade-up"
@@ -18,7 +18,7 @@ const ProvideSection = () => {
               What We Provide
             </div>
             <h1
-              className="text-4xl font-bold mb-4 leading-tight"
+              className="text-3xl sm:text-4xl font-bold mb-4 leading-tight"
               data-aos="zoom-in-right"
               data-aos-delay="400"
             >
@@ -57,7 +57,7 @@ const ProvideSection = () => {
                 </div>
               </div>
             ) : (
-              <div className="relative w-full h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
+              <div className="relative w-full h-64 sm:h-80 md:h-[350px] rounded-lg overflow-hidden shadow-lg">
                 <iframe
                   className="w-full h-full rounded-lg"
                   src="https://www.youtube.com/embed/Y-x0efG1seA?si=bHksv-sATVMbfAhk&autoplay=1"
@@ -91,7 +91,7 @@ const ProvideSection = () => {
       )}
 
       <div className="bg-[#0e384c] py-20">
-        <div className="container mx-auto px-32">
+        <div className="container mx-auto px-4 sm:px-8 lg:px-32">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div
               className="flex items-start space-x-2"

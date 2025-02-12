@@ -6,7 +6,7 @@ import Team4 from "../assets/images/team-4.jpg";
 
 const OurTeam = () => {
   return (
-    <div className="my-20">
+    <div className="my-10 lg:my-20">
       <div>
         <div
           className="container mx-auto text-center text-[#1e84b5] font-medium text-base"
@@ -18,14 +18,14 @@ const OurTeam = () => {
         </div>
 
         <h1
-          className="text-center font-bold text-4xl my-5"
+          className="text-center font-bold text-3xl sm:text-4xl my-2 lg:my-5"
           data-aos="zoom-in"
           data-aos-delay="400"
         >
           Experienced and caring dental team
         </h1>
         <p
-          className="w-1/2 mx-auto font-medium text-center text-[#537383] leading-7"
+          className="sm:w-1/2 mx-auto px-4 font-medium text-center text-[#537383] leading-7"
           data-aos="fade-up"
           data-aos-delay="300"
         >
@@ -36,7 +36,8 @@ const OurTeam = () => {
       </div>
 
       <div className="w-full container p-6 mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mx-32">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mx-0 sm:mx-32">
+          {/* Team Member 1 */}
           <div
             className="rounded-3xl overflow-hidden text-center"
             data-aos="fade-up"
@@ -44,7 +45,7 @@ const OurTeam = () => {
           >
             <div>
               <img className="mx-auto" src={Team1} alt="Dr. Rohini Joe" />
-              <div className="flex items-center justify-center bg-[#9fb0b1db] space-x-4">
+              <div className="flex items-center justify-center bg-[#9fb0b1db] space-x-4 py-2">
                 <a href="">
                   <i className="fa-brands fa-facebook-f text-2xl hover:text-[#1e84b5]"></i>
                 </a>
@@ -63,6 +64,7 @@ const OurTeam = () => {
             <p className="text-[#5a7988]">Senior Chauffeur</p>
           </div>
 
+          {/* Team Member 2 */}
           <div
             className="rounded-3xl overflow-hidden text-center"
             data-aos="fade-up"
@@ -70,7 +72,7 @@ const OurTeam = () => {
           >
             <div>
               <img className="mx-auto" src={Team2} alt="Taylor Smith" />
-              <div className="flex items-center justify-center bg-[#9fb0b1db] space-x-4">
+              <div className="flex items-center justify-center bg-[#9fb0b1db] space-x-4 py-2">
                 <a href="">
                   <i className="fa-brands fa-facebook-f text-2xl hover:text-[#1e84b5]"></i>
                 </a>
@@ -89,6 +91,7 @@ const OurTeam = () => {
             <p className="text-[#5a7988]">City Tour Guide</p>
           </div>
 
+          {/* Team Member 3 */}
           <div
             className="rounded-3xl overflow-hidden text-center"
             data-aos="fade-up"
@@ -96,7 +99,7 @@ const OurTeam = () => {
           >
             <div>
               <img className="mx-auto" src={Team3} alt="Jordan Brown" />
-              <div className="flex items-center justify-center bg-[#9fb0b1db] space-x-4">
+              <div className="flex items-center justify-center bg-[#9fb0b1db] space-x-4 py-2">
                 <a href="">
                   <i className="fa-brands fa-facebook-f text-2xl hover:text-[#1e84b5]"></i>
                 </a>
@@ -115,6 +118,7 @@ const OurTeam = () => {
             <p className="text-[#5a7988]">Distance Driver</p>
           </div>
 
+          {/* Team Member 4 */}
           <div
             className="rounded-3xl overflow-hidden text-center"
             data-aos="fade-up"
@@ -122,7 +126,7 @@ const OurTeam = () => {
           >
             <div>
               <img className="mx-auto" src={Team4} alt="Jacob Jones" />
-              <div className="flex items-center justify-center bg-[#9fb0b1db] space-x-4">
+              <div className="flex items-center justify-center bg-[#9fb0b1db] space-x-4 py-2">
                 <a href="">
                   <i className="fa-brands fa-facebook-f text-2xl hover:text-[#1e84b5]"></i>
                 </a>

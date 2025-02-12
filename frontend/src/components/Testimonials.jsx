@@ -25,12 +25,10 @@ const sliderSettings = {
           padding: 0,
         }}
       >
-        {" "}
-        {dots}{" "}
+        {dots}
       </ul>
     </div>
   ),
-
   responsive: [
     {
       breakpoint: 1024,
@@ -49,10 +47,10 @@ const sliderSettings = {
 
 const Testimonials = () => {
   return (
-    <div className="w-full my-20 px-4">
+    <div className="w-full my-20 px-2 lg:px-0">
       <div className="text-center mb-12">
         <div
-          className="text-[#1e84b5] font-medium text-base"
+          className="text-[#1e84b5] font-medium text-sm lg:text-base"
           data-aos="fade-up"
           data-aos-delay="300"
         >
@@ -60,14 +58,14 @@ const Testimonials = () => {
           Testimonials
         </div>
         <h1
-          className="text-4xl font-bold text-[#333] my-5"
+          className="text-2xl lg:text-4xl font-bold text-[#333] my-5"
           data-aos="zoom-in"
           data-aos-delay="300"
         >
           Listen from our happy patients
         </h1>
         <p
-          className="w-1/2 mx-auto font-medium text-[#537383] leading-7"
+          className="w-2/2 lg:w-1/2 mx-auto font-medium text-[#537383] leading-7"
           data-aos="fade-up"
           data-aos-delay="400"
         >
@@ -77,7 +75,7 @@ const Testimonials = () => {
         </p>
       </div>
 
-      <div className="mx-36" data-aos="fade-up" data-aos-delay="300">
+      <div className="mx-auto" style={{ maxWidth: '1200px' }} data-aos="fade-up" data-aos-delay="300">
         <div>
           <Slider {...sliderSettings}>
             {/* Testimonial 1 */}

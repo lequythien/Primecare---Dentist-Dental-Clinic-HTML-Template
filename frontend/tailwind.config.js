@@ -11,7 +11,10 @@ export default {
       },
       gridTemplateColumns:{
         'auto':'repeat(auto-fill, minmax(200px, 1fr))'
-      }
+      },
+      screens: {
+        'md': '1080px', // Điều chỉnh điểm dừng md thành 1080px
+      },
     },
   },
   plugins: [],
