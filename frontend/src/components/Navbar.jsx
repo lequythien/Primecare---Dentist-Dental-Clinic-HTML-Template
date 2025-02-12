@@ -2,34 +2,50 @@ import React, { useState } from "react";
 import Logo from "../assets/images/logo.svg";
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isHomeMenuOpen, setIsHomeMenuOpen] = useState(false);
-  const [isPagesMenuOpen, setIsPagesMenuOpen] = useState(false);
+  const [menuState, setMenuState] = useState({
+    isMenuOpen: false,
+    isHomeMenuOpen: false,
+    isPagesMenuOpen: false,
+  });
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setMenuState((prevState) => ({
+      ...prevState,
+      isMenuOpen: !prevState.isMenuOpen,
+    }));
   };
 
   const toggleHomeMenu = () => {
-    setIsHomeMenuOpen(!isHomeMenuOpen);
+    setMenuState((prevState) => ({
+      ...prevState,
+      isHomeMenuOpen: !prevState.isHomeMenuOpen,
+    }));
   };
 
   const togglePagesMenu = () => {
-    setIsPagesMenuOpen(!isPagesMenuOpen);
+    setMenuState((prevState) => ({
+      ...prevState,
+      isPagesMenuOpen: !prevState.isPagesMenuOpen,
+    }));
   };
 
   return (
-    <div className="bg-[#0e384c] text-white py-6 z-50">
+    <div className="bg-[#0e384c] text-white py-6 z-50 relative">
       <div className="container mx-auto flex flex-wrap items-center justify-between px-6 md:px-36">
         <img src={Logo} alt="Logo" className="h-12 w-auto" />
-        
+
         {/* Desktop Menu */}
         <div className="hidden md:flex w-auto md:w-fit">
           <ul className="flex space-x-6 font-bold">
             <li className="relative group hover:text-[#1e84b5] cursor-pointer">
               Home
               <i className="fa-solid fa-chevron-down ml-2"></i>
-              <ul className="absolute left-0 hidden group-hover:block text-white bg-[#1e84b5] mt-2 py-1 w-48 rounded-xl">
+              {/* Dropdown for Home */}
+              <ul
+                className={`absolute left-0 hidden group-hover:block text-white bg-[#1e84b5] mt-2 py-1 w-48 rounded-xl transition-all duration-300 ease-in-out ${
+                  menuState.isHomeMenuOpen ? "block" : "hidden"
+                }`}
+              >
                 <a href="">
                   <li className="px-4 py-2 hover:text-black">Home</li>
                 </a>
@@ -57,7 +73,12 @@ const Navbar = () => {
             <li className="relative group hover:text-[#1e84b5] cursor-pointer">
               Pages
               <i className="fa-solid fa-chevron-down ml-2"></i>
-              <ul className="absolute left-0 hidden group-hover:block text-white bg-[#1e84b5] mt-2 py-1 w-48 rounded-xl">
+              {/* Dropdown for Pages */}
+              <ul
+                className={`absolute left-0 hidden group-hover:block text-white bg-[#1e84b5] mt-2 py-1 w-48 rounded-xl transition-all duration-300 ease-in-out ${
+                  menuState.isPagesMenuOpen ? "block" : "hidden"
+                }`}
+              >
                 <li className="px-4 py-2 hover:text-black">Service Details</li>
                 <a href="">
                   <li className="px-4 py-2 hover:text-black">Blog</li>
@@ -101,7 +122,7 @@ const Navbar = () => {
           >
             <i
               className={`fa-solid fa-bars text-xl ${
-                isMenuOpen ? "text-white fa-xmark" : ""
+                menuState.isMenuOpen ? "fa-xmark" : ""
               }`}
             ></i>
           </button>
@@ -121,24 +142,32 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden ${isMenuOpen ? "block" : "hidden"} bg-[#1e84b5] mt-2 absolute top-20 left-0 w-full`}
+        className={`md:hidden ${
+          menuState.isMenuOpen
+            ? "max-h-screen opacity-100 visible"
+            : "max-h-0 opacity-0 invisible"
+        } bg-[#1e84b5] transition-all duration-300 ease-in-out transform ${
+          menuState.isMenuOpen ? "translate-y-0" : ""
+        } mt-2 absolute top-20 left-0 w-full`}
       >
         <ul className="flex flex-col space-y-4 py-4 font-bold">
           <li className="relative w-full">
             <details className="w-full">
               <summary
                 onClick={toggleHomeMenu}
-                className="cursor-pointer text-white block w-full px-6 flex justify-between items-center"
+                className="cursor-pointer text-white w-full px-6 flex justify-between items-center"
               >
                 Home
                 <i
                   className={`fa-solid ${
-                    isHomeMenuOpen ? "fa-chevron-up" : "fa-chevron-down"
+                    menuState.isHomeMenuOpen
+                      ? "fa-chevron-up"
+                      : "fa-chevron-down"
                   }`}
                 ></i>
               </summary>
 
-              {isHomeMenuOpen && (
+              {menuState.isHomeMenuOpen && (
                 <ul className="mt-2 space-y-2 pl-10">
                   <li>
                     <a href="" className="block w-full">
@@ -173,17 +202,19 @@ const Navbar = () => {
             <details className="w-full">
               <summary
                 onClick={togglePagesMenu}
-                className="cursor-pointer text-white block w-full px-6 flex justify-between items-center"
+                className="cursor-pointer text-white w-full px-6 flex justify-between items-center"
               >
                 Pages
                 <i
                   className={`fa-solid ${
-                    isPagesMenuOpen ? "fa-chevron-up" : "fa-chevron-down"
+                    menuState.isPagesMenuOpen
+                      ? "fa-chevron-up"
+                      : "fa-chevron-down"
                   }`}
                 ></i>
               </summary>
 
-              {isPagesMenuOpen && (
+              {menuState.isPagesMenuOpen && (
                 <ul className="mt-2 space-y-2 pl-10">
                   <li>
                     <a href="" className="block w-full">
