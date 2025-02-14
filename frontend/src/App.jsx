@@ -10,7 +10,7 @@ import Home from "./pages/Home";
 
 const App = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="flex flex-col">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
