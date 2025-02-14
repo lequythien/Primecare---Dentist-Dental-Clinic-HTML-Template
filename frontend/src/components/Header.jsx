@@ -20,7 +20,7 @@ const Header = () => {
     <div className="main-hero-header bg-[#0e384c] text-[#FFFFFF] flex flex-col lg:flex-row justify-center items-center">
       <div className="container flex flex-col lg:flex-row items-center justify-center px-4 mx-16 lg:space-x-10">
         {/* Text Section */}
-        <div className="lg:w-1/2 w-full lg:text-left text-center">
+        <div className="lg:w-1/2 w-full lg:text-left">
           <h1 className="text-h1-header leading-tight flex flex-wrap">
             {words.map((word, index) => (
               <motion.span
