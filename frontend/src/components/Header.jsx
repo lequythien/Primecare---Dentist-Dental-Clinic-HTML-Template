@@ -21,9 +21,7 @@ const Header = () => {
       <div className="container flex flex-col lg:flex-row items-center justify-center px-4 mx-16 lg:space-x-10">
         {/* Text Section */}
         <div className="lg:w-1/2 w-full lg:text-left text-center">
-          <h1
-            className="text-h1-header leading-tight flex flex-wrap"
-          >
+          <h1 className="text-h1-header leading-tight flex flex-wrap">
             {words.map((word, index) => (
               <motion.span
                 key={index}
@@ -66,7 +64,7 @@ const Header = () => {
               data-aos="fade-up"
               data-aos-delay="400"
             >
-              <i className="fa-solid fa-user-doctor text-xl sm:text-2xl bg-[#2b5062] p-2 sm:p-3 rounded-xl hover:bg-[#1e84b5]"></i>
+              <i className="fa-solid fa-user-doctor text-xl sm:text-2xl bg-[#2b5062] p-2 sm:p-3 rounded-xl hover:bg-[#1e84b5] hidden md:block"></i>
               <span>Experience Doctor</span>
             </div>
             <div
@@ -74,7 +72,7 @@ const Header = () => {
               data-aos="fade-up"
               data-aos-delay="500"
             >
-              <i className="fa-solid fa-hands-holding-child text-xl sm:text-2xl bg-[#2b5062] p-2 sm:p-3 rounded-xl hover:bg-[#1e84b5]"></i>
+              <i className="fa-solid fa-hands-holding-child text-xl sm:text-2xl bg-[#2b5062] p-2 sm:p-3 rounded-xl hover:bg-[#1e84b5] hidden md:block"></i>
               <span>Personalized Care</span>
             </div>
             <div
@@ -82,7 +80,7 @@ const Header = () => {
               data-aos="fade-up"
               data-aos-delay="600"
             >
-              <i className="fa-solid fa-money-check-dollar text-xl sm:text-2xl bg-[#2b5062] p-2 sm:p-3 rounded-xl hover:bg-[#1e84b5]"></i>
+              <i className="fa-solid fa-money-check-dollar text-xl sm:text-2xl bg-[#2b5062] p-2 sm:p-3 rounded-xl hover:bg-[#1e84b5] hidden md:block"></i>
               <span>Flexible Payment Option</span>
             </div>
           </div>
@@ -97,7 +95,7 @@ const Header = () => {
             <img
               src={Img_Header1}
               alt="Dental 1"
-              className="w-full h-48 object-cover rounded-3xl lg:h-[22rem]"
+              className="w-full h-[22rem] object-cover rounded-3xl lg:h-[22rem]"
             />
             <img
               src={Img_Header2}
@@ -118,7 +116,7 @@ const Header = () => {
             <img
               src={Img_Header4}
               alt="Dental 4"
-              className="w-full h-48 object-cover rounded-3xl lg:h-[22rem]"
+              className="w-full h-[22rem] object-cover rounded-3xl lg:h-[22rem]"
             />
           </div>
           <div
@@ -129,7 +127,7 @@ const Header = () => {
             <img
               src={Img_Header5}
               alt="Dental 5"
-              className="w-full h-56 object-cover rounded-3xl lg:h-[22rem]"
+              className="w-full h-[22rem] object-cover rounded-3xl lg:h-[22rem]"
             />
           </div>
         </div>

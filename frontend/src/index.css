@@ -44,4 +44,8 @@
         font-size: 32px;
         padding-right: 100px;
     }
+
+    .icon-header i {
+        display: none;
+    }
 }

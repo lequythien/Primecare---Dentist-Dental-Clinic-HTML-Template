@@ -7,7 +7,7 @@ const AboutSection = () => {
     <div className="my-20 flex flex-col lg:flex-row items-center justify-center lg:space-x-12 space-y-10 lg:space-y-0 px-6">
       {/* Image Section */}
       <div
-        className="relative w-full lg:w-auto"
+        className="relative lg:w-auto"
         data-aos="fade-right"
         data-aos-delay="300"
       >
@@ -20,7 +20,9 @@ const AboutSection = () => {
         <div className="absolute bottom-10 left-5 lg:left-10 bg-[#ffffff86] shadow-md p-6 rounded-3xl px-7 flex items-center space-x-3">
           <div>
             <i className="fa-regular fa-thumbs-up text-white border rounded-xl text-base px-3 py-2 hover:bg-[#0e384c]"></i>
-            <p className="text-white py-1 text-2xl font-bold"><CountUp start={0} end={875} duration={2.5} separator="," />+</p>
+            <p className="text-white py-1 text-2xl font-bold">
+              <CountUp start={0} end={875} duration={2.5} separator="," />+
+            </p>
             <p className="text-white font-medium">Happy Patients</p>
           </div>
         </div>
@@ -62,25 +64,25 @@ const AboutSection = () => {
             data-aos-delay="500"
           >
             <li>
-              <i className="fa-regular fa-circle-check mr-2 text-[#1e84b5]"></i> Experienced
-              Team
+              <i className="fa-regular fa-circle-check mr-2 text-[#1e84b5]"></i>{" "}
+              Experienced Team
             </li>
             <li>
-              <i className="fa-regular fa-circle-check mr-2 text-[#1e84b5]"></i> Emergency
-              Dental Services
+              <i className="fa-regular fa-circle-check mr-2 text-[#1e84b5]"></i>{" "}
+              Emergency Dental Services
             </li>
             <li>
               <i className="fa-regular fa-circle-check mr-2 text-[#1e84b5]"></i>{" "}
               State-of-the-Art Technology
             </li>
             <li>
-              <i className="fa-regular fa-circle-check mr-2 text-[#1e84b5]"></i> Comprehensive
-              Services
+              <i className="fa-regular fa-circle-check mr-2 text-[#1e84b5]"></i>{" "}
+              Comprehensive Services
             </li>
           </ul>
 
           <div
-            className="flex items-center justify-center lg:justify-start bg-[#0e384c] p-8 rounded-3xl w-max mx-auto lg:mx-0"
+            className="flex items-center justify-end lg:justify-end bg-[#0e384c] p-8 rounded-3xl w-max ml-auto"
             data-aos="fade-up"
             data-aos-delay="500"
           >
