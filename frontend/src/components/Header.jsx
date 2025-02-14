@@ -92,43 +92,58 @@ const Header = () => {
             className="col-span-1 flex flex-col space-y-4 lg:space-y-6"
             data-aos="fade-right"
           >
-            <img
-              src={Img_Header1}
-              alt="Dental 1"
-              className="w-full h-[22rem] object-cover rounded-3xl lg:h-[22rem]"
-            />
-            <img
-              src={Img_Header2}
-              alt="Dental 2"
-              className="w-full h-32 object-cover rounded-3xl lg:h-40"
-            />
+            <div className="relative group">
+              <img
+                src={Img_Header1}
+                alt="Dental 1"
+                className="w-full h-[22rem] object-cover rounded-3xl lg:h-[22rem]"
+              />
+              <div className="absolute inset-0 bg-[#1e84b5] opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-50 rounded-3xl"></div>
+            </div>
+            <div className="relative group">
+              <img
+                src={Img_Header2}
+                alt="Dental 2"
+                className="w-full h-32 object-cover rounded-3xl lg:h-40"
+              />
+              <div className="absolute inset-0 bg-[#1e84b5] opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-50 rounded-3xl"></div>
+            </div>
           </div>
           <div
             className="col-span-1 flex flex-col space-y-4 lg:space-y-6"
             data-aos="fade-right"
             data-aos-delay="200"
           >
-            <img
-              src={Img_Header3}
-              alt="Dental 3"
-              className="w-full h-32 object-cover rounded-3xl lg:h-40"
-            />
-            <img
-              src={Img_Header4}
-              alt="Dental 4"
-              className="w-full h-[22rem] object-cover rounded-3xl lg:h-[22rem]"
-            />
+            <div className="relative group">
+              <img
+                src={Img_Header3}
+                alt="Dental 3"
+                className="w-full h-32 object-cover rounded-3xl lg:h-40"
+              />
+              <div className="absolute inset-0 bg-[#1e84b5] opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-50 rounded-3xl"></div>
+            </div>
+            <div className="relative group">
+              <img
+                src={Img_Header4}
+                alt="Dental 4"
+                className="w-full h-[22rem] object-cover rounded-3xl lg:h-[22rem]"
+              />
+              <div className="absolute inset-0 bg-[#1e84b5] opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-50 rounded-3xl"></div>
+            </div>
           </div>
           <div
             className="col-span-1 flex items-center justify-center"
             data-aos="fade-right"
             data-aos-delay="400"
           >
-            <img
-              src={Img_Header5}
-              alt="Dental 5"
-              className="w-full h-[22rem] object-cover rounded-3xl lg:h-[22rem]"
-            />
+            <div className="relative group">
+              <img
+                src={Img_Header5}
+                alt="Dental 5"
+                className="w-full h-[22rem] object-cover rounded-3xl lg:h-[22rem]"
+              />
+              <div className="absolute inset-0 bg-[#1e84b5] opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-50 rounded-3xl"></div>
+            </div>
           </div>
         </div>
       </div>
