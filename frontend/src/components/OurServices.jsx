@@ -41,7 +41,7 @@ const OurServices = () => {
         {[Icon1, Icon2, Icon3, Icon4].map((icon, index) => (
           <div
             key={index}
-            className="bg-white py-6 px-6 rounded-3xl shadow-md hover:bg-[#0e384c] hover:text-white transition duration-300 group"
+            className="bg-white py-6 px-6 rounded-3xl border hover:bg-[#0e384c] hover:text-white transition duration-300 group"
             data-aos="fade-up"
             data-aos-delay={`${400 + index * 100}`}
           >

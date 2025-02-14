@@ -29,9 +29,9 @@ const AboutSection = () => {
       </div>
 
       {/* Content Section */}
-      <div className="max-w-xl lg:text-left">
+      <div className="max-w-xl lg:text-left ">
         <div
-          className="flex items-center lg:justify-start space-x-3 text-[#1e84b5]"
+          className="flex items-center justify-center lg:justify-start space-x-3 text-[#1e84b5]"
           data-aos="fade-up"
           data-aos-delay="300"
         >
@@ -82,7 +82,7 @@ const AboutSection = () => {
           </ul>
 
           <div
-            className="flex items-center justify-end lg:justify-end bg-[#0e384c] p-8 rounded-3xl w-max ml-auto"
+            className="flex items-center justify-start lg:justify-end bg-[#0e384c] p-8 rounded-3xl w-max ml-0 lg:ml-auto"
             data-aos="fade-up"
             data-aos-delay="500"
           >
@@ -98,7 +98,7 @@ const AboutSection = () => {
         </div>
 
         <button
-          className="relative overflow-hidden bg-[#1e84b5] text-white font-semibold mt-6 px-6 py-3 rounded-xl flex items-center mx-auto lg:mx-0 transition duration-300 ease-in-out group"
+          className="relative overflow-hidden bg-[#1e84b5] text-white font-semibold mt-6 px-6 py-3 rounded-xl flex items-center mx-0 lg:mx-0 transition duration-300 ease-in-out group"
           data-aos="fade-up"
           data-aos-delay="600"
         >
