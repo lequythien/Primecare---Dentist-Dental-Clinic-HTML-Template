@@ -58,7 +58,7 @@ const Testimonials = () => {
           Testimonials
         </div>
         <h1
-          className="text-2xl lg:text-4xl font-bold text-[#333] my-5"
+          className="text-3xl lg:text-4xl font-bold text-[#0e384c] my-5"
           data-aos="zoom-in"
           data-aos-delay="300"
         >

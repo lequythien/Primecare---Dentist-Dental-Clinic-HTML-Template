@@ -5,7 +5,7 @@ import Icon3 from "../assets/images/icon-process-3.svg";
 
 const OurProcess = () => {
   return (
-    <div className="container mx-auto font-medium text-lg py-20 px-6 sm:px-12 lg:px-24">
+    <div className="container mx-auto font-medium text-lg py-32 px-6 sm:px-12 lg:px-32">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div className="space-y-6 pr-0 lg:pr-14">
           <div
@@ -17,7 +17,7 @@ const OurProcess = () => {
             Our Process
           </div>
           <h1
-            className="text-4xl font-bold"
+            className="text-4xl font-bold text-[#0e384c]"
             data-aos="zoom-in-right"
             data-aos-delay="200"
           >
@@ -34,7 +34,7 @@ const OurProcess = () => {
           </p>
 
           <button
-            className="relative overflow-hidden bg-[#1e84b5] text-white font-semibold px-6 py-3 rounded-xl flex items-center transition duration-300 ease-in-out group"
+            className="relative overflow-hidden bg-[#1e84b5] text-white font-semibold px-7 py-3 rounded-xl flex items-center transition duration-300 ease-in-out group"
             data-aos="fade-up"
             data-aos-delay="500"
           >

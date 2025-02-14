@@ -17,7 +17,7 @@ const AboutSection = () => {
           className="rounded-3xl w-full max-w-lg h-auto shadow-lg mx-auto"
         />
 
-        <div className="absolute bottom-10 left-5 lg:left-10 bg-[#acaca7f4] shadow-md p-6 rounded-3xl px-7 flex items-center space-x-3">
+        <div className="absolute bottom-10 left-5 lg:left-10 bg-[#ffffff86] shadow-md p-6 rounded-3xl px-7 flex items-center space-x-3">
           <div>
             <i className="fa-regular fa-thumbs-up text-white border rounded-xl text-base px-3 py-2 hover:bg-[#0e384c]"></i>
             <p className="text-white py-1 text-2xl font-bold"><CountUp start={0} end={875} duration={2.5} separator="," />+</p>
@@ -38,7 +38,7 @@ const AboutSection = () => {
         </div>
 
         <h1
-          className="text-3xl lg:text-4xl font-bold my-4"
+          className="text-3xl lg:text-4xl font-bold my-4 text-[#0E384C]"
           data-aos="fade-left"
           data-aos-delay="300"
         >
@@ -46,7 +46,7 @@ const AboutSection = () => {
         </h1>
 
         <p
-          className="text-gray-600 mb-6 leading-relaxed"
+          className="text-[#587786] mb-6 leading-relaxed"
           data-aos="fade-up"
           data-aos-delay="400"
         >
@@ -62,19 +62,19 @@ const AboutSection = () => {
             data-aos-delay="500"
           >
             <li>
-              <i className="fa-regular fa-circle-check mr-2"></i> Experienced
+              <i className="fa-regular fa-circle-check mr-2 text-[#1e84b5]"></i> Experienced
               Team
             </li>
             <li>
-              <i className="fa-regular fa-circle-check mr-2"></i> Emergency
+              <i className="fa-regular fa-circle-check mr-2 text-[#1e84b5]"></i> Emergency
               Dental Services
             </li>
             <li>
-              <i className="fa-regular fa-circle-check mr-2"></i>{" "}
+              <i className="fa-regular fa-circle-check mr-2 text-[#1e84b5]"></i>{" "}
               State-of-the-Art Technology
             </li>
             <li>
-              <i className="fa-regular fa-circle-check mr-2"></i> Comprehensive
+              <i className="fa-regular fa-circle-check mr-2 text-[#1e84b5]"></i> Comprehensive
               Services
             </li>
           </ul>

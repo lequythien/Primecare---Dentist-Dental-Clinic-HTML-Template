@@ -106,7 +106,7 @@ const WhyChooseUs = () => {
               <h2 className="text-base font-semibold">Why Choose Us</h2>
             </div>
             <h1
-              className="text-2xl lg:text-4xl font-bold my-4 leading-tight text-black"
+              className="text-2xl lg:text-4xl font-bold my-4 leading-tight text-[#0e384c]"
               data-aos="zoom-in-right"
               data-aos-delay="300"
             >
@@ -117,7 +117,7 @@ const WhyChooseUs = () => {
               data-aos="fade-up"
               data-aos-delay="400"
             >
-              We take the time to understand your individual needs and goals,
+              we take the time to understand your individual needs and goals,
               creating customized treatment plans to help you achieve optimal
               oral health.
             </p>

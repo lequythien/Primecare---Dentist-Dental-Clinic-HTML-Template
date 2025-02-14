@@ -18,7 +18,7 @@ const OurServices = () => {
       </div>
 
       <h1
-        className="text-center font-bold text-3xl md:text-4xl my-4"
+        className="text-center font-bold text-3xl md:text-4xl my-4 text-[#0e384c]"
         data-aos="zoom-in"
         data-aos-delay="300"
       >
@@ -26,7 +26,7 @@ const OurServices = () => {
       </h1>
 
       <p
-        className="w-full md:w-3/4 lg:w-1/2 mx-auto font-medium text-center text-[#567585]"
+        className="w-full md:w-3/4 lg:w-1/2 mx-auto font-medium text-center text-[#547483]"
         data-aos="fade-up"
         data-aos-delay="300"
       >
@@ -36,7 +36,7 @@ const OurServices = () => {
       </p>
 
       {/* Services Grid */}
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16 px-4">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16 px-20">
         {/* Service Card */}
         {[Icon1, Icon2, Icon3, Icon4].map((icon, index) => (
           <div

@@ -13,7 +13,7 @@ const ContactUsSection = () => {
           Contact Us
         </div>
         <h1
-          className="text-center text-3xl lg:text-4xl font-bold text-[#333] mb-4"
+          className="text-center text-3xl lg:text-4xl font-bold text-[#0e384c] mb-4"
           data-aos="zoom-in"
           data-aos-delay="400"
         >
@@ -29,7 +29,7 @@ const ContactUsSection = () => {
           treatments. With dental practices throughout the world.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-6 mx-auto max-w-screen-xl px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mx-auto max-w-screen-xl px-4">
           <div
             className="rounded-3xl p-4 border flex items-center space-x-4"
             data-aos="fade-up"
@@ -37,7 +37,7 @@ const ContactUsSection = () => {
           >
             <i className="fa-solid fa-phone text-white bg-[#1e84b5] text-xl py-2 px-3 rounded-lg"></i>
             <div>
-              <h1 className="font-semibold text-xl text-[#333]">
+              <h1 className="font-semibold text-xl text-[#0e384c]">
                 Contact Details
               </h1>
               <span className="text-[#597887] font-medium">
@@ -53,7 +53,7 @@ const ContactUsSection = () => {
           >
             <i className="fa-solid fa-location-dot text-white bg-[#1e84b5] text-xl py-2 px-4 rounded-lg"></i>
             <div>
-              <h1 className="font-semibold text-xl text-[#333]">Address</h1>
+              <h1 className="font-semibold text-xl text-[#0e384c]">Address</h1>
               <span className="text-[#597887] font-medium">
                 403, Port Washington Road, Canada
               </span>
@@ -67,7 +67,7 @@ const ContactUsSection = () => {
           >
             <i className="fa-solid fa-envelope-open-text text-white bg-[#1e84b5] text-xl py-2 px-3 rounded-lg"></i>
             <div>
-              <h1 className="font-semibold text-xl text-[#333]">Email Us</h1>
+              <h1 className="font-semibold text-xl text-[#0e384c]">Email Us</h1>
               <span className="text-[#597887] font-medium">
                 info@domain.com
               </span>

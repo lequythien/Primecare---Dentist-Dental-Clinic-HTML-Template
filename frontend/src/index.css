@@ -1,3 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+    font-family: "Onest", sans-serif;
+}
+
+.main-hero-header{
+    padding: 120px 0;
+}
+
+.text-h1-header{
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.text-p-header{
+    font-size: 1rem;
+    line-height: 1.8em;
+    max-width: 470px;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.btn-header{
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 991px) {
+    .text-h1-header {
+        font-size: 46px;
+        padding-right: 100px;
+    }
+    .main-hero-header{
+        padding: 60px 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .text-h1-header {
+        font-size: 32px;
+        padding-right: 100px;
+    }
+}
