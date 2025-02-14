@@ -36,7 +36,7 @@ const OurServices = () => {
       </p>
 
       {/* Services Grid */}
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16 px-20">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16 px-4 md:px-8 lg:px-20">
         {/* Service Card */}
         {[Icon1, Icon2, Icon3, Icon4].map((icon, index) => (
           <div

@@ -9,7 +9,7 @@ const Navbar = () => {
   });
   const [isMobile, setIsMobile] = useState(false);
 
-  // Kiểm tra kích thước màn hình
+  // Check screen size
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 990);
@@ -37,7 +37,7 @@ const Navbar = () => {
 
   return (
     <header className="main-navbar top-0 left-0 w-full z-50">
-      <div className="bg-[#0e384c] text-[#FFFFFF] py-7 px-6 md:px-36">
+      <div className="bg-[#0e384c] text-[#FFFFFF] py-7 px-4 md:px-36">
         <div className="container mx-auto flex items-center justify-between">
           {/* Logo */}
           <a href="#">
@@ -129,7 +129,7 @@ const Navbar = () => {
             menuState.isMenuOpen
               ? "max-h-screen opacity-100 visible"
               : "max-h-0 opacity-0 invisible"
-          } bg-[#1e84b5] transition-all duration-300 mt-2 absolute top-20 left-0 w-full`}
+          } bg-[#1e84b5] transition-all duration-300 mt-2 absolute top-20 left-0 w-full px-4`}
         >
           <ul className="flex flex-col space-y-4 py-4 font-bold">
             <li className="relative w-full">
@@ -144,7 +144,7 @@ const Navbar = () => {
                       menuState.isHomeMenuOpen
                         ? "fa-chevron-up"
                         : "fa-chevron-down"
-                    }`}
+                    } absolute right-6`}
                   ></i>
                 </summary>
                 <ul
@@ -192,7 +192,7 @@ const Navbar = () => {
                       menuState.isPagesMenuOpen
                         ? "fa-chevron-up"
                         : "fa-chevron-down"
-                    }`}
+                    } absolute right-6`}
                   ></i>
                 </summary>
                 <ul
