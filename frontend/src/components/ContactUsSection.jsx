@@ -35,7 +35,7 @@ const ContactUsSection = () => {
             data-aos="fade-up"
             data-aos-delay="600"
           >
-            <i className="fa-solid fa-phone text-white bg-[#1e84b5] text-xl py-2 px-3 rounded-lg"></i>
+            <i className="fa-solid fa-phone text-white bg-[#1e84b5] hover:bg-[#0e384c] text-xl py-2 px-3 rounded-lg"></i>
             <div>
               <h1 className="font-semibold text-xl text-[#0e384c]">
                 Contact Details
@@ -51,7 +51,7 @@ const ContactUsSection = () => {
             data-aos="fade-up"
             data-aos-delay="700"
           >
-            <i className="fa-solid fa-location-dot text-white bg-[#1e84b5] text-xl py-2 px-4 rounded-lg"></i>
+            <i className="fa-solid fa-location-dot text-white bg-[#1e84b5] hover:bg-[#0e384c] text-xl py-2 px-4 rounded-lg"></i>
             <div>
               <h1 className="font-semibold text-xl text-[#0e384c]">Address</h1>
               <span className="text-[#597887] font-medium">
@@ -65,7 +65,7 @@ const ContactUsSection = () => {
             data-aos="fade-up"
             data-aos-delay="800"
           >
-            <i className="fa-solid fa-envelope-open-text text-white bg-[#1e84b5] text-xl py-2 px-3 rounded-lg"></i>
+            <i className="fa-solid fa-envelope-open-text text-white bg-[#1e84b5] hover:bg-[#0e384c] text-xl py-2 px-3 rounded-lg"></i>
             <div>
               <h1 className="font-semibold text-xl text-[#0e384c]">Email Us</h1>
               <span className="text-[#597887] font-medium">
