@@ -30,10 +30,18 @@ const Footer = () => {
               treatments.
             </p>
             <div className="flex mt-4 lg:justify-start space-x-8">
-              <i className="fa-brands fa-facebook-f text-xl hover:text-[#1e84b5]"></i>
-              <i className="fa-brands fa-x-twitter text-xl hover:text-[#1e84b5]"></i>
-              <i className="fa-brands fa-linkedin-in text-xl hover:text-[#1e84b5]"></i>
-              <i className="fa-brands fa-instagram text-xl hover:text-[#1e84b5]"></i>
+              <a href="">
+                <i className="fa-brands fa-facebook-f text-xl hover:text-[#1e84b5]"></i>
+              </a>
+              <a href="">
+                <i className="fa-brands fa-x-twitter text-xl hover:text-[#1e84b5]"></i>
+              </a>
+              <a href="">
+                <i className="fa-brands fa-linkedin-in text-xl hover:text-[#1e84b5]"></i>
+              </a>
+              <a href="">
+                <i className="fa-brands fa-instagram text-xl hover:text-[#1e84b5]"></i>
+              </a>
             </div>
           </div>
 
@@ -83,7 +91,8 @@ const Footer = () => {
                 <i className="fa-solid fa-envelope mr-2"></i>info@domain.com
               </li>
               <li>
-                <i className="fa-solid fa-location-dot mr-2"></i>843, Apple Lane, Peoria
+                <i className="fa-solid fa-location-dot mr-2"></i>843, Apple
+                Lane, Peoria
               </li>
             </ul>
           </div>
@@ -93,7 +102,9 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="flex my-6 justify-center">
-          <p className="font-medium text-base">© Primecare 2024 All right reserved.</p>
+          <p className="font-medium text-base">
+            © Primecare 2024 All right reserved.
+          </p>
         </div>
       </div>
     </div>
