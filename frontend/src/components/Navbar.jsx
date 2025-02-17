@@ -55,10 +55,18 @@ const Navbar = () => {
                 Home
                 <i className="fa-solid fa-chevron-down ml-2"></i>
                 <ul className="absolute left-0 hidden group-hover:block text-white bg-[#1e84b5] mt-2 py-1 w-48 rounded-xl transition-all duration-300">
-                  <li className="px-4 py-2 hover:text-black">Home</li>
-                  <li className="px-4 py-2 hover:text-black">Home - Image</li>
-                  <li className="px-4 py-2 hover:text-black">Home - Video</li>
-                  <li className="px-4 py-2 hover:text-black">Home - Slider</li>
+                  <li className="px-4 py-2 hover:text-black">
+                    <a href="">Home</a>
+                  </li>
+                  <li className="px-4 py-2 hover:text-black">
+                    <a href="">Home - Image</a>
+                  </li>
+                  <li className="px-4 py-2 hover:text-black">
+                    <a href="">Home - Video</a>
+                  </li>
+                  <li className="px-4 py-2 hover:text-black">
+                    <a href="">Home - Slider</a>
+                  </li>
                 </ul>
               </li>
               <li>
@@ -79,14 +87,30 @@ const Navbar = () => {
                   <li className="px-4 py-2 hover:text-black">
                     Service Details
                   </li>
-                  <li className="px-4 py-2 hover:text-black">Blog</li>
-                  <li className="px-4 py-2 hover:text-black">Blog Details</li>
-                  <li className="px-4 py-2 hover:text-black">Doctor</li>
-                  <li className="px-4 py-2 hover:text-black">Doctor Details</li>
-                  <li className="px-4 py-2 hover:text-black">Gallery</li>
-                  <li className="px-4 py-2 hover:text-black">Testimonials</li>
-                  <li className="px-4 py-2 hover:text-black">FAQ's</li>
-                  <li className="px-4 py-2 hover:text-black">404</li>
+                  <li className="px-4 py-2 hover:text-black">
+                    <a href="">Blog</a>
+                  </li>
+                  <li className="px-4 py-2 hover:text-black">
+                    <a href="">Blog Details</a>
+                  </li>
+                  <li className="px-4 py-2 hover:text-black">
+                    <a href="">Doctor</a>
+                  </li>
+                  <li className="px-4 py-2 hover:text-black">
+                    <a href="">Doctor Details</a>
+                  </li>
+                  <li className="px-4 py-2 hover:text-black">
+                    <a href="">Gallery</a>
+                  </li>
+                  <li className="px-4 py-2 hover:text-black">
+                    <a href="">Testimonials</a>
+                  </li>
+                  <li className="px-4 py-2 hover:text-black">
+                    <a href="">FAQ's</a>
+                  </li>
+                  <li className="px-4 py-2 hover:text-black">
+                    <a href="">404</a>
+                  </li>
                 </ul>
               </li>
               <li>
