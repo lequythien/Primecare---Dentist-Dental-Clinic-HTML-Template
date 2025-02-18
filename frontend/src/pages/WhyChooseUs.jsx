@@ -1,5 +1,6 @@
 import React from "react";
-import Img from "../assets/images/hero-image-2.jpg";
+import Img from "../assets/images/why-choose-bg-img.jpg";
+import Icon from "../assets/images/icon-sub-heading.svg";
 import Icon1 from "../assets/images/icon-why-choose-1.svg";
 import Icon2 from "../assets/images/icon-why-choose-2.svg";
 import Icon3 from "../assets/images/icon-why-choose-3.svg";
@@ -8,7 +9,8 @@ import CountUp from "react-countup";
 const WhyChooseUs = () => {
   return (
     <div className="w-full bg-[#f9fcff] text-white">
-      <div className="flex justify-center items-center max-w-7xl mx-auto px-6">
+      <div className="flex justify-center items-center mx-auto">
+        <div className="max-w-7xl w-full py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full">
           {/* Left section with image and icons */}
           <div className="relative order-2 lg:order-1">
@@ -98,22 +100,22 @@ const WhyChooseUs = () => {
           {/* Right section with text content */}
           <div className="text-left lg:text-left flex flex-col justify-center order-1 lg:order-2">
             <div
-              className="flex items-center space-x-3 text-[#1e84b5] mb-4"
+              className="flex items-center space-x-3 text-[#1e84b5] mb-4 text-sm"
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              <i className="fa-solid fa-tooth text-xl"></i>
-              <h2 className="text-base font-semibold">Why Choose Us</h2>
+              <img src={Icon} alt="" />
+              <h2 className="why-choose-h2 font-semibold">Why Choose Us</h2>
             </div>
             <h1
-              className="text-2xl lg:text-4xl font-bold my-4 leading-tight text-[#0e384c]"
+              className="text-h1-whychoose font-bold my-4 leading-tight text-[#0e384c]"
               data-aos="zoom-in-right"
               data-aos-delay="300"
             >
               Exceptional dental care tailored to your needs
             </h1>
             <p
-              className="text-[#0e384c] font-bold lg:font-semibold mb-6 leading-relaxed"
+              className="text-p1-whychoose text-[#527282] font-bold lg:font-bold mb-6 leading-relaxed"
               data-aos="fade-up"
               data-aos-delay="400"
             >
@@ -123,8 +125,8 @@ const WhyChooseUs = () => {
             </p>
             <div className="flex items-center">
               <div className="mr-6" data-aos="fade-up" data-aos-delay="550">
-                <p className="text-gray-600 leading-relaxed">
-                  We believe that your dental experience should be more than
+                <p className="text-p2-whychoose text-gray-600">
+                  we believe that your dental experience should be more than
                   just a routine visit. Our goal is to provide comprehensive,
                   personalized care in a welcoming environment, where your
                   comfort and well-being come first.
@@ -137,10 +139,10 @@ const WhyChooseUs = () => {
                 <p className="text-sm font-semibold text-gray-500 lg:mb-4">
                   01
                 </p>
-                <span className="text-3xl lg:text-4xl font-bold text-[#0e384c]">
+                <span className="span-whychoose font-semibold text-[#0e384c]">
                 <CountUp start={0} end={20} duration={3.5} separator="," />+
                 </span>
-                <p className="text-[#0e384c] font-bold text-lg lg:text-xl">
+                <p className="text-p3-whychoose text-[#0e384c] font-semibold">
                   Years Of Experience
                 </p>
               </div>
@@ -149,10 +151,10 @@ const WhyChooseUs = () => {
                 <p className="text-sm font-semibold text-gray-500 lg:mb-4">
                   02
                 </p>
-                <span className="text-3xl lg:text-4xl font-bold text-[#0e384c]">
+                <span className="span-whychoose font-bold text-[#0e384c]">
                 <CountUp start={0} end={5} duration={2.5} separator="," />+
                 </span>
-                <p className="text-[#0e384c] font-bold text-lg lg:text-xl">
+                <p className="text-p3-whychoose text-[#0e384c] font-semibold">
                   Happy Patients
                 </p>
               </div>
@@ -161,15 +163,16 @@ const WhyChooseUs = () => {
                 <p className="text-sm font-semibold text-gray-500 lg:mb-4">
                   03
                 </p>
-                <span className="text-3xl lg:text-4xl font-bold text-[#0e384c]">
+                <span className="span-whychoose font-bold text-[#0e384c]">
                   <CountUp start={0} end={986} duration={2.5} separator="," />+
                 </span>
-                <p className="text-[#0e384c] font-bold text-lg lg:text-xl">
+                <p className="text-p3-whychoose text-[#0e384c] font-semibold">
                   Treatment Completed
                 </p>
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </div>

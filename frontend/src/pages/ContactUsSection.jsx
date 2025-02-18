@@ -1,16 +1,22 @@
 import React from "react";
+import IconHeading from "../assets/images/icon-sub-heading.svg";
+import IconPhone from "../assets/images/icon-phone.svg";
+import IconAddress from "../assets/images/icon-location.svg";
+import IconMail from "../assets/images/icon-mail.svg";
 
 const ContactUsSection = () => {
   return (
     <div className="py-10 lg:py-16 px-4">
       <div className="container mx-auto">
         <div
-          className="text-center text-[#1e84b5] font-medium text-base mb-4"
+          className="text-center text-[#1e84b5] font-medium text-sm mb-4"
           data-aos="fade-up"
           data-aos-delay="300"
         >
-          <i className="fa-solid fa-tooth mr-2"></i>
-          Contact Us
+          <div className="flex items-center justify-center space-x-3">
+            <img src={IconHeading} alt="" />
+            <span className="font-semibold">Contact Us</span>
+          </div>
         </div>
         <h1
           className="text-center text-3xl lg:text-4xl font-bold text-[#0e384c] mb-4"
@@ -35,7 +41,11 @@ const ContactUsSection = () => {
             data-aos="fade-up"
             data-aos-delay="600"
           >
-            <i className="fa-solid fa-phone text-white bg-[#1e84b5] hover:bg-[#0e384c] text-xl py-2 px-3 rounded-lg"></i>
+            <img
+              src={IconPhone}
+              alt=""
+              className="bg-[#1e84b5] hover:bg-[#0e384c] text-xl py-3 px-3 rounded-lg"
+            />
             <div>
               <h1 className="font-semibold text-xl text-[#0e384c]">
                 Contact Details
@@ -51,7 +61,11 @@ const ContactUsSection = () => {
             data-aos="fade-up"
             data-aos-delay="700"
           >
-            <i className="fa-solid fa-location-dot text-white bg-[#1e84b5] hover:bg-[#0e384c] text-xl py-2 px-4 rounded-lg"></i>
+            <img
+              src={IconAddress}
+              alt=""
+              className="bg-[#1e84b5] hover:bg-[#0e384c] text-xl py-3 px-3 rounded-lg"
+            />
             <div>
               <h1 className="font-semibold text-xl text-[#0e384c]">Address</h1>
               <span className="text-[#597887] font-medium">
@@ -65,7 +79,11 @@ const ContactUsSection = () => {
             data-aos="fade-up"
             data-aos-delay="800"
           >
-            <i className="fa-solid fa-envelope-open-text text-white bg-[#1e84b5] hover:bg-[#0e384c] text-xl py-2 px-3 rounded-lg"></i>
+            <img
+              src={IconMail}
+              alt=""
+              className="bg-[#1e84b5] hover:bg-[#0e384c] text-xl py-3 px-3 rounded-lg"
+            />
             <div>
               <h1 className="font-semibold text-xl text-[#0e384c]">Email Us</h1>
               <span className="text-[#597887] font-medium">

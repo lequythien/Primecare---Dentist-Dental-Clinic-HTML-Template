@@ -1,15 +1,15 @@
 import React from "react";
 import Header from "../components/Header";
-import ContactSection from "../components/ContactSection";
-import AboutSection from "../components/AboutSection";
-import OurServices from "../components/OurServices";
-import OurProcess from "../components/OurProcess";
-import WhyChooseUs from "../components/WhyChooseUs";
-import Testimonials from "../components/Testimonials";
-import ProvideSection from "../components/ProvideSection";
-import OurTeam from "../components/OurTeam";
-import BlogArticles from "../components/BlogArticles";
-import ContactUsSection from "../components/ContactUsSection";
+import ContactSection from "./ContactSection";
+import AboutSection from "./AboutSection";
+import OurServices from "./OurServices";
+import OurProcess from "./OurProcess";
+import WhyChooseUs from "./WhyChooseUs";
+import Testimonials from "./Testimonials";
+import ProvideSection from "./ProvideSection";
+import OurTeam from "./OurTeam";
+import BlogArticles from "./BlogArticles";
+import ContactUsSection from "./ContactUsSection";
 
 const Home = () => {
   return (

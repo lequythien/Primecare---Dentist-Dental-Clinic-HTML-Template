@@ -1,4 +1,5 @@
 import React from "react";
+import { FaFacebookF, FaXTwitter, FaLinkedinIn, FaInstagram, FaPhone, FaEnvelope, FaLocationDot, FaArrowRight } from "react-icons/fa6";
 import Logo from "../assets/images/logo.svg";
 
 const Footer = () => {
@@ -12,7 +13,7 @@ const Footer = () => {
           <button className="relative overflow-hidden bg-[#1e84b5] text-white font-semibold mt-6 lg:mt-0 px-6 py-3 rounded-xl flex transition duration-300 ease-in-out group">
             <span className="relative z-10 flex items-center">
               Book Appointment
-              <i className="fa-solid fa-arrow-right ml-2"></i>
+              <FaArrowRight className="ml-2" />
             </span>
             <span className="absolute inset-0 bg-[#0e384c] border rounded-xl scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out origin-center"></span>
           </button>
@@ -30,70 +31,39 @@ const Footer = () => {
               treatments.
             </p>
             <div className="flex mt-4 lg:justify-start space-x-8">
-              <a href="">
-                <i className="fa-brands fa-facebook-f text-xl hover:text-[#1e84b5]"></i>
-              </a>
-              <a href="">
-                <i className="fa-brands fa-x-twitter text-xl hover:text-[#1e84b5]"></i>
-              </a>
-              <a href="">
-                <i className="fa-brands fa-linkedin-in text-xl hover:text-[#1e84b5]"></i>
-              </a>
-              <a href="">
-                <i className="fa-brands fa-instagram text-xl hover:text-[#1e84b5]"></i>
-              </a>
+              <a href="" className="text-xl hover:text-[#1e84b5]"><FaFacebookF /></a>
+              <a href="" className="text-xl hover:text-[#1e84b5]"><FaXTwitter /></a>
+              <a href="" className="text-xl hover:text-[#1e84b5]"><FaLinkedinIn /></a>
+              <a href="" className="text-xl hover:text-[#1e84b5]"><FaInstagram /></a>
             </div>
           </div>
 
           <div>
             <h1 className="font-bold text-xl mb-4">Quick Links</h1>
             <ul className="space-y-4 lg:text-left">
-              <li className="hover:text-[#1e84b5]">
-                <a href="">Home</a>
-              </li>
-              <li className="hover:text-[#1e84b5]">
-                <a href="">About Us</a>
-              </li>
-              <li className="hover:text-[#1e84b5]">
-                <a href="">Our Services</a>
-              </li>
-              <li className="hover:text-[#1e84b5]">
-                <a href="">Contact Us</a>
-              </li>
+              <li className="hover:text-[#1e84b5]"><a href="">Home</a></li>
+              <li className="hover:text-[#1e84b5]"><a href="">About Us</a></li>
+              <li className="hover:text-[#1e84b5]"><a href="">Our Services</a></li>
+              <li className="hover:text-[#1e84b5]"><a href="">Contact Us</a></li>
             </ul>
           </div>
 
           <div>
             <h1 className="font-bold text-xl mb-4">Services</h1>
             <ul className="space-y-4 lg:text-left">
-              <li className="hover:text-[#1e84b5]">
-                <a href="">Dental Care</a>
-              </li>
-              <li className="hover:text-[#1e84b5]">
-                <a href="">Cosmetic Dentistry</a>
-              </li>
-              <li className="hover:text-[#1e84b5]">
-                <a href="">Dental Implants</a>
-              </li>
-              <li className="hover:text-[#1e84b5]">
-                <a href="">Teeth Whitening</a>
-              </li>
+              <li className="hover:text-[#1e84b5]"><a href="">Dental Care</a></li>
+              <li className="hover:text-[#1e84b5]"><a href="">Cosmetic Dentistry</a></li>
+              <li className="hover:text-[#1e84b5]"><a href="">Dental Implants</a></li>
+              <li className="hover:text-[#1e84b5]"><a href="">Teeth Whitening</a></li>
             </ul>
           </div>
 
           <div>
             <h1 className="font-bold text-xl mb-4">Contact Info</h1>
             <ul className="space-y-8 lg:text-left">
-              <li>
-                <i className="fa-solid fa-phone mr-2"></i>+1 809 120 6705
-              </li>
-              <li>
-                <i className="fa-solid fa-envelope mr-2"></i>info@domain.com
-              </li>
-              <li>
-                <i className="fa-solid fa-location-dot mr-2"></i>843, Apple
-                Lane, Peoria
-              </li>
+              <li><FaPhone className="inline mr-2" />+1 809 120 6705</li>
+              <li><FaEnvelope className="inline mr-2" />info@domain.com</li>
+              <li><FaLocationDot className="inline mr-2" />843, Apple Lane, Peoria</li>
             </ul>
           </div>
         </div>

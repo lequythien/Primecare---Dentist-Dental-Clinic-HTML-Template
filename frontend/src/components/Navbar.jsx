@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Logo from "../assets/images/logo.svg";
+import { ArrowRightIcon, ChevronDownIcon } from "@heroicons/react/24/solid";
+import {
+  AiOutlineMenu,
+  AiOutlineClose,
+  AiOutlineDown,
+  AiOutlineUp,
+} from "react-icons/ai";
 
 const Navbar = () => {
   const [menuState, setMenuState] = useState({
@@ -36,8 +43,8 @@ const Navbar = () => {
   };
 
   return (
-    <header className="main-navbar top-0 left-0 w-full z-50">
-      <div className="bg-[#0e384c] text-[#FFFFFF] py-7 px-4 md:px-36">
+    <header className="main-navbar bg-[#0e384c] top-0 left-0 w-full z-50">
+      <div className="max-w-7xl mx-auto  text-[#FFFFFF] py-7 px-4 md:px-0">
         <div className="container mx-auto flex items-center justify-between">
           {/* Logo */}
           <a href="#">
@@ -53,7 +60,7 @@ const Navbar = () => {
             <ul className="flex space-x-7 font-bold">
               <li className="relative group hover:text-[#1e84b5] cursor-pointer">
                 Home
-                <i className="fa-solid fa-chevron-down ml-2"></i>
+                <ChevronDownIcon className="w-4 h-4 ml-2 inline-block" />
                 <ul className="absolute left-0 hidden group-hover:block text-white bg-[#1e84b5] mt-2 py-1 w-48 rounded-xl transition-all duration-300">
                   <li className="px-4 py-2 hover:text-black">
                     <a href="">Home</a>
@@ -81,7 +88,7 @@ const Navbar = () => {
               </li>
               <li className="relative group hover:text-[#1e84b5] cursor-pointer">
                 Pages
-                <i className="fa-solid fa-chevron-down ml-2"></i>
+                <ChevronDownIcon className="w-4 h-4 ml-2 inline-block" />
                 {/* Dropdown for Pages */}
                 <ul className="absolute left-0 hidden group-hover:block text-white bg-[#1e84b5] mt-2 py-1 w-48 rounded-xl transition-all duration-300">
                   <li className="px-4 py-2 hover:text-black">
@@ -126,7 +133,7 @@ const Navbar = () => {
             <button className="btn-navbar relative overflow-hidden bg-[#1e84b5] text-white font-semibold px-6 py-3 rounded-xl flex items-center transition duration-300 ease-in-out group">
               <span className="relative z-10 flex items-center">
                 Book Appointment
-                <i className="fa-solid fa-arrow-right ml-2"></i>
+                <ArrowRightIcon className="w-5 h-5 ml-2" />
               </span>
               <span className="absolute inset-0 bg-[#0e384c] border rounded-xl scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out origin-center"></span>
             </button>
@@ -136,13 +143,13 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={toggleMenu}
-              className="text-white rounded-lg w-10 h-10 bg-[#1e84b5]"
+              className="text-white rounded-lg w-10 h-10 bg-[#1e84b5] flex items-center justify-center"
             >
-              <i
-                className={`fa-solid ${
-                  menuState.isMenuOpen ? "fa-xmark" : "fa-bars"
-                } text-xl`}
-              ></i>
+              {menuState.isMenuOpen ? (
+                <AiOutlineClose className="text-xl" />
+              ) : (
+                <AiOutlineMenu className="text-xl" />
+              )}
             </button>
           </div>
         </div>
@@ -163,13 +170,13 @@ const Navbar = () => {
                   onClick={() => toggleSubMenu("isHomeMenuOpen")}
                 >
                   Home
-                  <i
-                    className={`fa-solid ${
-                      menuState.isHomeMenuOpen
-                        ? "fa-chevron-up"
-                        : "fa-chevron-down"
-                    } absolute right-6`}
-                  ></i>
+                  <span className="absolute right-6">
+                    {menuState.isHomeMenuOpen ? (
+                      <AiOutlineUp />
+                    ) : (
+                      <AiOutlineDown />
+                    )}
+                  </span>
                 </summary>
                 <ul
                   className={`mt-2 space-y-2 pl-10 transition-all duration-300 ${
@@ -194,6 +201,7 @@ const Navbar = () => {
                 </ul>
               </details>
             </li>
+
             <li>
               <a href="" className="text-white hover:text-[#0e384c] px-6">
                 About Us
@@ -211,13 +219,13 @@ const Navbar = () => {
                   onClick={() => toggleSubMenu("isPagesMenuOpen")}
                 >
                   Pages
-                  <i
-                    className={`fa-solid ${
-                      menuState.isPagesMenuOpen
-                        ? "fa-chevron-up"
-                        : "fa-chevron-down"
-                    } absolute right-6`}
-                  ></i>
+                  <span className="absolute right-6">
+                    {menuState.isPagesMenuOpen ? (
+                      <AiOutlineUp />
+                    ) : (
+                      <AiOutlineDown />
+                    )}
+                  </span>
                 </summary>
                 <ul
                   className={`mt-2 space-y-2 pl-10 transition-all duration-300 ${

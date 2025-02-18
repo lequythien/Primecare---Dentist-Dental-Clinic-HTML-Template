@@ -15,6 +15,9 @@ export default {
       screens: {
         'md': '1080px', // Điều chỉnh điểm dừng md thành 1080px
       },
+      fontFamily: {
+        sans: ['Onest', 'sans-serif'],
+      },
     },
   },
   plugins: [],

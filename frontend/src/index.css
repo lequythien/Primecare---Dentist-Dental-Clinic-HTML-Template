@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Onest&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
-  font-family: "Onest", sans-serif;
+  font-family: "Onest", sans-serif !important;
 }
 
 .main-hero-header {
@@ -55,7 +55,85 @@
     max-width: 1200px;
   }
 
-  .main-hero-header .container{
+  .main-hero-header .container {
     max-width: 1200px;
+  }
+}
+
+.about-h2,
+.why-choose-h2,
+.testimonials-text {
+  font-family: "Onest", sans-serif !important;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.content-h1,
+.text-h1-whychoose {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.service-card-p {
+  line-height: 29px;
+}
+
+.text-p1-whychoose {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 29px;
+}
+
+.text-p2-whychoose {
+  font-size: 16px;
+  line-height: 29px;
+}
+
+.text-p3-whychoose {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.span-whychoose {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.testimonials-h1 {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.blog-h1 {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.blog-p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29px;
+}
+
+.testimonials-p {
+  font-size: 16px;
+  line-height: 29px;
+}
+
+.testimonials-h1{
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.img-list {
+  flex-shrink: 0;
+}
+
+@media (min-width: 640px) {
+  .main-hero-header .container {
+    max-width: none;
+  }
+  .main-navbar .container {
+    max-width: none;
   }
 }
