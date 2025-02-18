@@ -8,7 +8,7 @@ import { ArrowRightIcon } from "@heroicons/react/24/solid";
 
 const OurServices = () => {
   return (
-    <div className="bg-[#f9fcff]">
+    <div className="bg-[#f9fcff] px-4 lg:px-0">
       <div className=" max-w-7xl mx-auto">
         <div className="w-full py-20">
           {/* Header Section */}

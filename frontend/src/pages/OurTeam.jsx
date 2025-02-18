@@ -20,7 +20,7 @@ const teamMembers = [
 
 const OurTeam = () => {
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-7xl mx-auto px-4 lg:px-0">
       <div className="w-full my-10 lg:my-20">
         <div
           className="container mx-auto text-center text-[#1e84b5] font-medium text-sm"

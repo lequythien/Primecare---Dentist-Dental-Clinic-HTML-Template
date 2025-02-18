@@ -6,7 +6,7 @@ const ProvideSection = () => {
   const [isVideoVisible, setIsVideoVisible] = useState(false);
 
   return (
-    <div className="bg-[#0e384c]">
+    <div className="bg-[#0e384c] px-4 lg:px-0">
       <div className="max-w-7xl mx-auto">
         <div className="w-full text-white py-10 lg:py-20">
           <div className="container mx-auto">

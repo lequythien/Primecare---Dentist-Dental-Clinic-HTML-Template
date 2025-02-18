@@ -9,7 +9,7 @@ import { ArrowRightIcon } from "@heroicons/react/24/solid";
 const BlogArticles = () => {
   return (
     <div>
-      <div className="bg-[#f9fcff] py-32">
+      <div className="bg-[#f9fcff] py-32 px-4 lg:px-0">
         <div
           className="text-center text-[#1e84b5] font-medium text-sm lg:text-sm mb-4"
           data-aos="fade-up"

@@ -8,8 +8,7 @@ import { ArrowRightIcon } from "@heroicons/react/24/solid";
 const OurProcess = () => {
   return (
     <div className="max-w-7xl mx-auto">
-      {" "}
-      <div className="container mx-auto font-medium text-lg py-16">
+      <div className="container mx-auto font-medium text-lg py-16 px-4 lg:px-0">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="space-y-6">
             <div

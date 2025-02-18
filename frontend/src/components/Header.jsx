@@ -21,7 +21,7 @@ const Header = () => {
   const words = text.split(" ");
 
   return (
-    <div className="bg-[#0e384c]">
+    <div className="bg-[#0e384c] px-4 lg:px-0">
       <div className="main-hero-header max-w-7xl mx-auto text-[#FFFFFF] flex flex-col lg:flex-row justify-center items-center">
         <div className="container flex flex-col lg:flex-row items-center justify-center lg:space-x-10">
           {/* Text Section */}

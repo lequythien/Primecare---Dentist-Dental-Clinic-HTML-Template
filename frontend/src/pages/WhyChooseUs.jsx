@@ -8,7 +8,7 @@ import CountUp from "react-countup";
 
 const WhyChooseUs = () => {
   return (
-    <div className="w-full bg-[#f9fcff] text-white">
+    <div className="w-full bg-[#f9fcff] text-white px-4 lg:px-0">
       <div className="flex justify-center items-center mx-auto">
         <div className="max-w-7xl w-full py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full">
