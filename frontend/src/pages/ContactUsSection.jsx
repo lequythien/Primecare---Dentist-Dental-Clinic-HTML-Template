@@ -7,7 +7,7 @@ import IconMail from "../assets/images/icon-mail.svg";
 const ContactUsSection = () => {
   return (
     <div className="py-10 lg:py-16 px-4">
-      <div className="container mx-auto">
+      <div className="w-full mx-auto px-4 lg:px-0">
         <div
           className="text-center text-[#1e84b5] font-medium text-sm mb-4"
           data-aos="fade-up"
@@ -95,7 +95,7 @@ const ContactUsSection = () => {
 
         {/* GG Map */}
         <div className="my-14 mx-4 md:mx-32">
-          <div className="google-map-iframe w-full h-96 sm:h-80 md:h-[500px] rounded-lg overflow-hidden">
+          <div className="google-map-iframe max-w-7xl mx-auto h-96 sm:h-80 md:h-[500px] rounded-lg overflow-hidden">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96737.10562045308!2d-74.08535042841811!3d40.739265258395164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1703158537552!5m2!1sen!2sin"
               allowfullscreen=""

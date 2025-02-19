@@ -7,7 +7,7 @@ const ContactSection = () => {
   return (
     <div className="w-full flex flex-col items-center">
       <div className="cta-contact-box w-full max-w-6xl my-4 mx-auto">
-        <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-6 md:justify-center my-10 mx-4">
+        <div className="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-6 md:justify-center my-10 mx-4">
           {/* Phone Section */}
           <div
             className="flex items-center space-x-4 md:text-left pr-6 lg:pr-10 lg:border-r-2 border-[#eef1f2]"

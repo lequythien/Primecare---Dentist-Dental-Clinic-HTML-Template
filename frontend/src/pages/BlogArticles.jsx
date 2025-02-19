@@ -41,7 +41,7 @@ const BlogArticles = () => {
         </div>
 
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 mx-auto max-w-screen-xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-8 mx-auto max-w-screen-xl">
             <div
               className="bg-white border rounded-3xl py-2 lg:py-4 px-2 lg:px-4"
               data-aos="fade-up"

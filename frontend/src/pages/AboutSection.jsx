@@ -4,6 +4,7 @@ import IconAboutUs from "../assets/images/icon-sub-heading.svg";
 import IconCheck from "../assets/images/icon-check.svg";
 import IconExp from "../assets/images/icon-experience-year.svg";
 import CountUp from "react-countup";
+import IconLike from "../assets/images/icon-happy-patients.svg";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 
 const AboutSection = () => {
@@ -25,7 +26,11 @@ const AboutSection = () => {
 
             <div className="absolute bottom-10 left-5 lg:left-10 bg-[#ffffff86] shadow-md p-6 rounded-3xl px-7 flex items-center space-x-3">
               <div>
-                <i className="fa-regular fa-thumbs-up text-white border rounded-xl text-base px-3 py-2 hover:bg-[#0e384c]"></i>
+                <img
+                  src={IconLike}
+                  alt=""
+                  className="text-white border rounded-xl text-base px-3 py-3 hover:bg-[#0e384c]"
+                />
                 <p className="text-white py-1 text-2xl font-bold">
                   <CountUp start={0} end={875} duration={2.5} separator="," />+
                 </p>

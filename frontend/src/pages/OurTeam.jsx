@@ -54,7 +54,7 @@ const OurTeam = () => {
         </div>
 
         <div className="w-full container py-6 mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-4 px-2 gap-6">
             {teamMembers.map((member, index) => (
               <div
                 key={index}

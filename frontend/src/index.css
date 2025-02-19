@@ -1,5 +1,5 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Onest&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -70,6 +70,10 @@
   line-height: 20px;
 }
 
+.whychoose-right {
+  padding: 0px 100px;
+}
+
 .content-h1,
 .text-h1-whychoose {
   font-size: 40px;
@@ -122,13 +126,18 @@
   line-height: 29px;
 }
 
-.testimonials-h1{
+.testimonials-h1 {
   font-size: 20px;
   line-height: 24px;
 }
 
 .img-list {
   flex-shrink: 0;
+}
+
+.footer-h1{
+  font-size: 40px;
+  line-height: 48px;
 }
 
 @media (min-width: 640px) {

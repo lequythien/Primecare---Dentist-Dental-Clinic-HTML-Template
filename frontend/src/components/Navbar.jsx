@@ -44,7 +44,7 @@ const Navbar = () => {
 
   return (
     <header className="main-navbar bg-[#0e384c] top-0 left-0 w-full z-50">
-      <div className="max-w-7xl mx-auto  text-[#FFFFFF] py-7 px-4 md:px-0">
+      <div className="max-w-7xl mx-auto  text-[#FFFFFF] py-7 px-4 xl:px-0">
         <div className="container mx-auto flex items-center justify-between">
           {/* Logo */}
           <a href="#">
