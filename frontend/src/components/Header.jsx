@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Img_Header1 from "../assets/images/hero-image-1.jpg";
 import Img_Header2 from "../assets/images/hero-image-2.jpg";
 import Img_Header3 from "../assets/images/hero-image-3.jpg";
@@ -13,6 +13,50 @@ import { motion } from "framer-motion";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 
 const Header = () => {
+  const CursorEffect = () => {
+    const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
+    const [isHovering, setIsHovering] = useState(false);
+
+    useEffect(() => {
+      const updateCursor = (e) => {
+        setCursorPos({ x: e.clientX, y: e.clientY });
+      };
+      document.addEventListener("mousemove", updateCursor);
+      return () => document.removeEventListener("mousemove", updateCursor);
+    }, []);
+
+    useEffect(() => {
+      const handleMouseEnter = () => setIsHovering(true);
+      const handleMouseLeave = () => setIsHovering(false);
+
+      const h1Elements = document.querySelectorAll("h1");
+      h1Elements.forEach((el) => {
+        el.addEventListener("mouseenter", handleMouseEnter);
+        el.addEventListener("mouseleave", handleMouseLeave);
+      });
+
+      return () => {
+        h1Elements.forEach((el) => {
+          el.removeEventListener("mouseenter", handleMouseEnter);
+          el.removeEventListener("mouseleave", handleMouseLeave);
+        });
+      };
+    }, []);
+
+    return (
+      <motion.div
+        className={`fixed -top-6 -left-6 w-2 h-2 bg-[#1e84b5] rounded-full z-50 pointer-events-none ${
+          isHovering ? "w-20 h-20 mix-blend-difference" : "top-3 left-3"
+        }`}
+        style={{
+          transform: `translate(${cursorPos.x - 0}px, ${cursorPos.y - 0}px)`,
+        }}
+        animate={{ x: cursorPos.x - 12, y: cursorPos.y - 12 }}
+        transition={{ type: "spring", stiffness: 2500, damping: 250 }}
+      />
+    );
+  };
+
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
@@ -22,6 +66,7 @@ const Header = () => {
 
   return (
     <div className="bg-[#0e384c] px-4 xl:px-0">
+      <CursorEffect />
       <div className="main-hero-header max-w-7xl mx-auto text-[#FFFFFF] flex flex-col lg:flex-row justify-center items-center">
         <div className="container flex flex-col lg:flex-row items-center justify-center lg:space-x-10">
           {/* Text Section */}
