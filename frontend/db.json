@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "id": "c8c5",
+      "fullName": "Lê Quý Thiện",
+      "email": "test1@gmail.com",
+      "password": "123456",
+      "avatar": "https://scontent.fdad3-1.fna.fbcdn.net/v/t39.30808-6/473997677_1134159091491874_3931925798968652860_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Tz6qFrjrpu4Q7kNvgGL1sSU&_nc_oc=AdghD65UPPaJyksp5Y2BlT-c6OzL3769Bpv_AEiwVtAiswc2W5Ct53ScNV1yFI8EiDc&_nc_zt=23&_nc_ht=scontent.fdad3-1.fna&_nc_gid=AnntGXOlHSzVH61_oImoVyf&oh=00_AYCwkP2w9PAdHedXlHPYuUhJ64dEDxyC_b54ljPHdKHkcA&oe=67C3541E"
+    }
+  ]
+}
